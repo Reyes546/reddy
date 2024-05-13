@@ -1,0 +1,10 @@
+[package]
+name = "reddy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-std = { version = "1.12.0", features = ["attributes"] }
+port_scanner = "0.1.5"
+serde = { version = "1.0.201", features = ["derive"] }
+tide = "0.16.0"
