@@ -11,7 +11,6 @@ struct ArdReq {
 async fn main() -> tide::Result<()> {
     let app = setup_routes();
     app.listen("127.0.0.1:8080").await?;
-
     
     for open_addr in scan_ports_addrs(vec!["192.168.1.1:8000", "192.168.1.2:8000"]) {
         println!("IP {} has port {} open.", open_addr.ip(), open_addr.port());
