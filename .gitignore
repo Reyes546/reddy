@@ -20,3 +20,4 @@ Cargo.lock
 
 # Arduino env file
 /arduino/WebController/WiFiCredentials.h
+/arduino/.DS_Store
